@@ -15,7 +15,7 @@ const Hero = () => {
           #1 Best Healthy Salad
         </div>
 
-        <h1 className="sm:text-3xl text-2xl lg:text-5xl xl:text-7xl lg:leading-[75.6px] xl:leading-[85.6px] tracking-tighter-[-1%] text-gray-black font-bold">
+        <h1 className="sm:text-3xl text-2xl lg:text-5xl xl:text-7xl lg:leading-[55.6px] xl:leading-[85.6px] tracking-tighter-[-1%] text-gray-black font-bold">
           <span className="text-orange">Skip</span> The Diet, Just Eat Healthy
           With Jez Salad
         </h1>

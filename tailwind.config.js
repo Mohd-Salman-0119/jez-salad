@@ -24,7 +24,7 @@ module.exports = withMT({
       },
       backgroundImage: {
         'gradient': 'linear-gradient(180deg, #FFF6EA 0%, rgba(255, 232, 199, 0.5) 100%)',
-      }
+      },
     },
   },
   plugins: [],

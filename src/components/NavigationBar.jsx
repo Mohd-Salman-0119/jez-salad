@@ -34,8 +34,8 @@ const NavigationBar = () => {
     };
   }, []);
   return (
-    <div className="m-auto sticky top-0">
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 shadow-none flex justify-between items-center">
+    <div className="m-auto sticky top-0 lg:px-10 xl:px-24 md:px-6 px-3 z-10">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none shadow-none flex justify-between items-center">
         <Typography className="text-black font-bold md:leading-[28.13px] text-sm md:text-xl">
           <span className="text-orange">JEZ</span> SALAD
         </Typography>
@@ -93,9 +93,9 @@ const Links = ({ activeLink }) => {
     >
       <Typography
         as="li"
-        className={`${activeLink === "home" ? "text-orange" : "text-black"}`}
+        className={`${activeLink === "" ? "text-orange" : "text-black"}`}
       >
-        <a href="#home">Home</a>
+        <a href="#">Home</a>
       </Typography>
       <Typography
         as="li"
