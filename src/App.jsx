@@ -5,10 +5,12 @@ import React from "react";
 
 const App = () => {
   return (
-    <div className="lg:px-10 xl:px-24 md:px-6 px-3">
+    <div>
       <NavigationBar />
-      <Hero />
-      <Menu />
+      <div className="lg:px-10 xl:px-24 md:px-6 px-3">
+        <Hero />
+        <Menu />
+      </div>
     </div>
   );
 };

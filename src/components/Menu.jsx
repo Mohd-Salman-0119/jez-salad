@@ -2,8 +2,8 @@ import React from "react";
 
 const Menu = () => {
   return (
-    <div className="my-5">
-      <div className="md:grid md:grid-cols-2 md:gap-20 items-center flex flex-col">
+    <div className="my-5" id="menu">
+      <div className="md:grid md:grid-cols-2 gap-2 md:gap-20 items-center flex flex-col">
           <div className="md:py-3">
 
           <h1 className="xl:text-[48px] lg:text-4xl md:text-3xl text-2xl xl:leading-[67.3px] text-left font-semibold tracking-tight text-gray-black">

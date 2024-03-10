@@ -1,10 +1,12 @@
 import { Button, Navbar, Typography } from "@material-tailwind/react";
+import { IoReorderThree } from "react-icons/io5";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 
 const NavigationBar = () => {
   const [activeLink, setActiveLink] = useState("home");
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +22,8 @@ const NavigationBar = () => {
         }
       });
     };
+
+    console.log(activeLink);
 
     // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
@@ -42,7 +46,7 @@ const NavigationBar = () => {
               activeLink === "home" ? "text-orange" : "text-black"
             }`}
           >
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </Typography>
           <Typography
             as="li"
@@ -72,8 +76,46 @@ const NavigationBar = () => {
         <Button className="rounded-full bg-orange text-white capitalize font-medium md:flex hidden">
           Sign
         </Button>
+        <IoReorderThree
+          className="text-black text-2xl flex md:hidden"
+          onClick={() => setToggle((p) => !p)}
+        />
       </Navbar>
+      {toggle && <Links activeLink={activeLink} />}
     </div>
+  );
+};
+
+const Links = ({ activeLink }) => {
+  return (
+    <Navbar
+      className={`flex md:hidden gap-2 lg:mb-0 lg:mt-0 flex-col justify-center items-center lg:items-center rounded-none h-44 border-none`}
+    >
+      <Typography
+        as="li"
+        className={`${activeLink === "home" ? "text-orange" : "text-black"}`}
+      >
+        <a href="#home">Home</a>
+      </Typography>
+      <Typography
+        as="li"
+        className={`${activeLink === "menu" ? "text-orange" : "text-black"}`}
+      >
+        <a href="#menu">Menu</a>
+      </Typography>
+      <Typography
+        as="li"
+        className={`${activeLink === "contact" ? "text-orange" : "text-black"}`}
+      >
+        <a href="#contact">Contact</a>
+      </Typography>
+      <Typography
+        as="li"
+        className={`${activeLink === "about" ? "text-orange" : "text-black"}`}
+      >
+        <a href="#about">About Us</a>
+      </Typography>
+    </Navbar>
   );
 };
 

@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div
       className="md:grid md:grid-cols-2 flex flex-col-reverse justify-center"
-      id="#"
+      id="home"
     >
       {/* left */}
       <div className="flex flex-col items-start justify-center gap-3">
