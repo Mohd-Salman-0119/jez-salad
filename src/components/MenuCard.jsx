@@ -11,7 +11,7 @@ import React from "react";
 
 const MenuCard = ({ Icon, paragraph, heading }) => {
   return (
-    <Card className="rounded-[3rem] group hover:shadow-2xl hover:shadow-light-cream transition-all duration-300 ease-in-out cursor-pointer border-light-cream border-2 md:py-4 xl:py-7 hover:scale-105 -z-0 py-1">
+    <Card className="rounded-[3rem] group hover:shadow-2xl hover:shadow-light-cream transition-all duration-300 ease-in-out cursor-pointer border-light-cream border-2 md:py-4 xl:py-7 hover:scale-105 -z-0 py-1 w-full">
       <CardBody className="my-2">
         <img src={Icon} />
         <div className="md:my-3 sm:my-2 my-1 flex flex-col gap-2">
